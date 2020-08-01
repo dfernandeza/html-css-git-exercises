@@ -1,9 +1,104 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/** RESET */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+/** KARMA STYLES  */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header span {
+  display: none; /* TODO: Look for */
+}
+
+header img {
+  width: 26px;
+}
+
+header ul {
+  display: none;
+}
+
+section h2 {
+  margin: 0;
+}
+
+.introducing {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits {
+  padding: 130px 0;
+}
+
+@media screen and (min-width: 700px) {
+  .benefits div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+figure img {
+  margin-bottom: 50px;
+  width: 127px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+footer hr {
+  border-color: #eaebec;
+  border-width: 1px 0 0 0;
+  width: 90%;
 }
 
 /**
@@ -15,5 +110,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
